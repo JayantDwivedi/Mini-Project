@@ -1,0 +1,21 @@
+.card-img-top {
+    width: 130px;
+    height: 200px;
+    border: 2px solid red;      /* Remove border when image is fixed */
+}
+
+.card {
+    border: 2px solid black;         /* Modify border color with someone */
+    border-radius: 8px;
+    text-align: justify;
+    padding: 20px;
+    display: inline-block;
+    align-content: space-evenly;
+    margin: 30px auto 30px 80px;
+}
+
+.card-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
