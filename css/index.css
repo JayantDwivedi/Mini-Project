@@ -1,7 +1,8 @@
 .card-img-top {
-    width: 130px;
+    width: 100px;
     height: 200px;
     border: 2px solid red;      /* Remove border when image is fixed */
+    /* margin-top: -50px; */
 }
 
 .card {
@@ -12,6 +13,10 @@
     display: inline-block;
     align-content: space-evenly;
     margin: 30px auto 30px 80px;
+    width: 25rem;
+}
+.card:hover {
+    box-shadow: 5px 5px grey;
 }
 
 .card-title {
@@ -19,3 +24,47 @@
     font-size: 24px;
     text-align: center;
 }
+
+
+
+.custom-cards {
+    border: 2px solid blue;
+    width:300px;
+    text-align:center;
+    font-size:32px;
+    border-radius:20px;
+    transition:0.8s,blur;
+  }
+  .custom-cards>img {
+    display:block;
+    margin:auto;
+    margin-top:-120px;
+    border:2px solid blue;
+    border-radius:50%;
+  }
+  .custom-cards>ul {
+    list-style-type:none;
+    font-size:24px;
+    margin-left:-35px;
+  }
+  .custom-cards>a {
+    display:inline-block;
+    margin-bottom:20px;
+    text-decoration: none;
+    border: 2px solid blue;
+    padding:10px;
+    border-radius:15px;
+    background-color:blue;
+    color:white;
+  }
+  .custom-cards>a:hover {
+    background-color:white;
+    border: 2px solid black;
+    text-decoration: none;
+    color:black;
+  }
+  .custom-cards:hover {
+    box-shadow: 15px 15px 5px grey;
+    
+  }
+  
