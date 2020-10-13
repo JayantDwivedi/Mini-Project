@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navigation-bar {
+    background:linear-gradient(to right, #17A2B8, white,#17A2B8);
+}
+.navigation-bar>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #17A2B8;
+    padding: 25px;
+}
+.panel {
+    margin-top: -8px;
+}
+.dashboard {
+    /* border: 2px solid blue; */
+    height: 100%;
+    background-color: #17A2B8;
+    color: white;
+    
+}
+.dashboard ul {
+    list-style: none;
+}
+.dashboard ul li {
+    border-bottom: 2px solid white;
+}
+.dashboard ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    transition: 0.4s;
+}
+.dashboard ul li a span {
+    margin-left: 30px;
+    font-size: 30px;
+}
+.dashboard ul li a:hover {
+    border-left: 10px solid cyan;
+}
+.dashboard ul li i {
+        font-size: 30px;
+        color: white;
+}
+.content {
+    /* border: 2px solid red; */
+    /* height: 80vh; */
+    /* overflow: scroll; */
+}
+h1{
+    text-align: center;
+}
+.card {
+    margin:30px auto 30px 30px;
+    box-shadow: 5px 5px 5px grey;
+}
+.card:hover {
+    margin:30px auto 30px 30px;
+    box-shadow: 15px 15px 15px grey;
+    transition: 0.8s;
+}
+.card-header {
+    text-align: center;
+}
+.card-body {
+    text-align: justify;
+}
