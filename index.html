@@ -17,21 +17,44 @@
 
 <body>
 
-    <div class="own-container">
-        <div id="own-header">
-            <div class="tag-name">
-                <a href="index.html">SanServ</a>
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#"> Services </a></li>
-                    <li><a href="#"> About Us </a></li>
-                    <li><a href="#"> Blogs </a></li>
-                    <li><a href="#"> Contact Us </a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    
+        <a class="navbar-brand" href="#">SANSERV</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">APPOINTMENT</button>
+            </form>
         </div>
+    </nav>
+
 
         <!-- Title Section -->
 
@@ -140,14 +163,19 @@
                 <div class="carousel-inner">
                     <div class="carousel-item container-fluid active">
                         <h2 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at minus similique molestiae ducimus doloribus.</h2>
-                        <img class="testimonial-image" src="#" alt="testimonial-images">
+                        <img class="testimonial-image" src="images/Dwivedi's.png" alt="image contains dwivedi tag">
                         <!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The <a href="https://twitter.com/hashtag/GalaxyS20FE?src=hash&amp;ref_src=twsrc%5Etfw">#GalaxyS20FE</a> is <a href="https://twitter.com/hashtag/MadeForFans?src=hash&amp;ref_src=twsrc%5Etfw">#MadeForFans</a> like you. Here’s our tribute to you and your fellow fans who keep the fandom alive. Tag 5 of your friends (or more) with whom you share your passion for photography, colors or performance and stand a chance to win a Galaxy S20 FE!</p>&mdash; Samsung India (@SamsungIndia) <a href="https://twitter.com/SamsungIndia/status/1315359007574499331?ref_src=twsrc%5Etfw">October 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
                         <em>Dwivedi's Faimly, Mainpuri</em>
                     </div>
                     <div class="carousel-item container-fluid">
                         <h2 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam libero nisi asperiores quas officiis.</h2>
-                        <img class="testimonial-image" src="#" alt="testimonail-images">
+                        <img class="testimonial-image" src="images/Varshney's.png" alt="image contains Varshney signature">
                         <em>Varshney's, Aligarh</em>
+                    </div>
+                    <div class="carousel-item container-fluid">
+                        <h2 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam libero nisi asperiores quas officiis.</h2>
+                        <img class="testimonial-image" src="images/Baluni.png" alt="image contains Baluni signature">
+                        <em>Mr.&Mrs.Baluni, Agra</em>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
@@ -161,72 +189,97 @@
         </section>
 
 
-        <!-- Footer  -->
+        <!-- Another Section  -->
 
-            <!-- <div class="own-footer">
-                <div>
-                    SanServ All Right Reserved © <a href="../index.html" target="_blank"> Sab hamara hai original </a>
-                    <p><a id="backtotop" href="">Back to Top</a></p>
+        <section>
+            <div class="row work-section">
+                <div class="col-lg-12">
+                    <h1 class="h1-black">How it Works</h1>
+                        <hr>
                 </div>
-            </div> -->
+                <div class="row ">
+                    <div class="col-lg-6 work-section">
+                        <ul>
+                            <li>
+                                <p><span class="bold">Choose the type of spacing according to your requirment</span><br>
+                                We service all types of residential and commercial spaces</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Choose the size of your space</span><br>
+                                We have customised solutions for spaces of all sizes</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Hassle-free service delivery</span><br>
+                                Complete disinfection and Deep Cleaning of your space</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 work-img">
+                        <img src="images/sample.jpg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+
+
+        <!-- Footer Section  -->
 
             <footer>
-                <section class="sec2">
-                    
-                    <section class="sec2-1">
-                        <h2>Catagories</h2>
+
+                <section class="foot-sec-1">
+                    <section class="link1">
+                        <h2>Categories</h2>
+        
                         <ul>
-                            <li><a href="#">C</a></li>
-                            <li><a href="#">UI Design</a></li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">Java</a></li>
-                            <li><a href="#">Android</a></li>
-                            <li><a href="#">Hybrid App</a></li>
+                            <li><a href="#">Sanitization</a></li>
+                            <li><a href="#">Pesticides</a></li>
+                            <li><a href="#">Disinfection</a></li>    
+                        
                         </ul>
                     </section>
-                    <section class="sec2-2">
+        
+                    <section class="link2">
                         <h2>Quick Links</h2>
+        
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Contribute</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">SiteMap</a></li>
-                            <li><a href="#">Disclamer</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#"> Contribute  </a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Services</a></li>
+                            <!-- <li><a href="#">Disclaimer</a></li> -->
                         </ul>
                     </section>
-                    <section class="sec2-3">
+        
+                    <section class="link3">
                         <h2>Contact Us</h2>
+        
                         <ul>
-                        <li><i class="fa fa-home"></i><a href="#">Mainpuri</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:jayant.gla_cs18@gla.ac.in">Email Us</a></li>
-                        <li><i class="fa fa-phone-square"></i><a href="tel:7060561783">Mobile: 7060561783</a></li>
-                        <li><i class="fa fa-globe"></i><a href="https://jayantdwivedi.github.io/Full-Stack-Class/">Website</a></li>
-                    </ul>
+                            <li><i class="fa fa-home"></i><span> Uttar Pradesh, India</span></li>
+                            <li><i class="fa fa-envelope"></i><span> senserv@gmail.com</span></li>
+                            <li><i class="fa fa-phone-square"></i><span> Mobile : 9999999999</span></li>
+                            <li><i class="fa fa-facebook-official"></i><a href="#"> senserv </a></li>
+                        </ul>
+                    </section>
+        
+                    <section class="foot-sec-2">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
                     </section>
                 </section>
-                <hr width="100%">
-                <section class="sec3">
-                    <h2>Register for Free</h2>
-                    <a href="#">Sign up</a>
-                </section>
-                <hr width="100%">
-                <section class="sec4">
-                    <ul>
-                    <li><i class="fa fa-facebook"></i></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-google-plus"></i></li>
-                    <li><i class="fa fa-linkedin"></i></li>
-                    <li><i class="fa fa-dribbble"></i></li>
-                </ul>
-                </section>
-                
+                <p class="p-3 bg-dark text-white text-center"> © SANSERV | 2020 </p>
             </footer>
     </div>
 
     <script>
         $('carousel slide').carousel({
-            interval: 1000
+            interval: 1000;
         })
     </script>
 
