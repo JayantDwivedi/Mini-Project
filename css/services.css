@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+#navigationBar{
+    height: 70px;
+}
+
 #section1{
     background-color: gray;
-    padding-bottom: 5%;
+    
 }
 
 #navigationBox{
@@ -15,7 +19,7 @@
     color: black;
     border-radius: 8%;
     box-shadow: 6px 5px 6px black;
-    height: 75vh;
+    height: 110vh;
 }
 
 #head{
@@ -44,11 +48,9 @@
 }
 
 #image{
-    background-color: #0bc2b3;
+    /* /* background-color: #0bc2b3; */
+    margin-top: 10%;
     padding-top: 10%;
-    border-radius: 3%;
-    height: 75vh;
-    box-shadow: 6px 5px 6px black;
 }
 
 .sec-1{

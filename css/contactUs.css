@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#navigationBar{
+    height: 70px;
+}
+
 #section1{
     background-color: gray;
     padding-bottom: 5%;
@@ -15,7 +19,7 @@
     color: black;
     border-radius: 3%;
     box-shadow: 6px 5px 6px black;
-    height: 67vh;
+    height: 69.5vh;
 }
 
 #head{
