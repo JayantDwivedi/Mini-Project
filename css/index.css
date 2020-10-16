@@ -71,27 +71,6 @@ h4{
     display: flex;
 }
 
-/* .own-box
-{
-    width: 20%;
-    float: left;
-    margin: 30px 25px;
-    background-color: rgb(255, 251, 251);
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-} */
-
-/* .image
-{
-    width: 80%; 
-    height: 180px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    border-radius: 10px;
-} */
-
 h3
 {
     text-align: center;
@@ -105,43 +84,6 @@ p
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .own-box a
-{
-    text-decoration: none;
-    display: block;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-} */
-
-/* .own-box a:hover
-{
-    text-decoration: none;
-    display: block;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
-} */
-
-/* .own-services::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.own-services {
-    margin: 30px;
-}
-*/
-
 .row-service {
     display: block;
     margin: 50px auto 50px auto;
@@ -150,10 +92,26 @@ p
 .card {
     display: inline-block;
     margin-left: 30px;
+    box-shadow: 5px 5px 5px grey;
+    transition: 0.8s;
+}
+.card:hover {
+    display: inline-block;
+    margin-left: 30px;
+    box-shadow: 15px 15px 15px grey;
+}
+.card:active {
+    display: inline-block;
+    margin-left: 30px;
+    box-shadow: 2px 2px 2px grey;
+    transition: 0.2s;
 }
 .own-services>h4 {
     font-size: 50px;
 } 
+.own-services {
+    margin: 50px auto 50px auto;
+}
 
 hr {
     width: 40%;
@@ -204,7 +162,7 @@ hr {
 }
 .work-img {
     display: inline-block;
-    border: 2px solid red;
+    margin-top: 30px;
     width: 500px;
     z-index: 1;
 }
