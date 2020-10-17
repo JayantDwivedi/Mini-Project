@@ -13,38 +13,14 @@
     padding-bottom: 5%;
 }
 
-#detailsBox{
-    background-color: #0bc2b3;
-    padding-top: 4%;
-    color: black;
-    border-radius: 3%;
-    box-shadow: 6px 5px 6px black;
-    height: 69.5vh;
+#about1{
+    padding-top: 7%;
+    padding-left: 2%;
 }
 
-#head{
-    text-align: center;
-}
-
-.details ul{
-    list-style: none;
-    text-align: center;
-}
-
-.details ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-.details ul li a:hover{
-    color: rgb(87, 75, 54);
-}
-
-#formBox{
-    background-color: #0bc2b3;
-    padding: 5%;
-    border-radius: 3%;
-    box-shadow: 6px 5px 6px black;
+#about2{
+    padding-top: 7%;
+    padding-right: 2%;
 }
 
 .sec-1{
