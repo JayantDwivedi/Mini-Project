@@ -1,72 +1,109 @@
-.own-border {
-    border: 5px solid red;
-}
+/* 
+    it is added to house and hospital
+*/
 *{
     padding:0 ;
     margin: 0;
     box-sizing: border-box;
 }
 
+body{
+    
+    background: url("../images/img1-carousel.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
 #navigationBar{
     height: 70px;
 }
-.background-img{
-    margin-top: 75px;
-    /* background: url("../images/sample.jpg"); */
-    height: 70vh;
-}
-.menu-bar {
-    height: 70vh;
-}
-.service-tag>h1 {
-    text-align: center;
-}
-.service-tag{
-    background: url("../images/sample.jpg");
-
-}
-.form-sec{
-    text-align: center;
-    color: white;
-    height: 62vh;
-    background-color: black;
-    opacity: 0.8;
-}
-
-#section1{
-    background-color: gray;
-    
-}
 
 #navigationBox{
-    background-color: #0bc2b3;
+    
     padding-top: 4%;
     color: black;
-    border-radius: 8%;
+    background-color: #e0ebeb;
     box-shadow: 6px 5px 6px black;
-    height: 110vh;
+    height: 92vh;
 }
 
 #head{
     text-align: center;
+ 
 }
 
-.links ul{
+#head1{
+    color: white;
+}
+
+#navigationBox .links ul{
     list-style: none;
     text-align: center;
 }
 
-.links ul li a{
+#navigationBox .links ul li a{
     text-decoration: none;
     color: black;
 }
 
-.links ul li a:hover{
+#navigationBox  .links ul li a:hover{
     color: rgb(87, 75, 54);
 }
 
+
+.background-img{
+    margin-top: 75px;
+    /* background: url("../images/img1-carousel.jpg");
+    background-repeat: no-repeat; */
+    height: 92vh;
+}
+
+.menu-bar {
+    height: 92vh;
+}
+
+.service-tag>h1 {
+    text-align: center;
+}
+
+.service-tag{
+    /* background: url("../images/img1-carousel.jpg");
+    background-repeat: no-repeat;
+    height: 92vh;
+    background-position: center;
+    background-size: cover; */
+
+}
+
+.form-sec{
+    margin-left: 2%;
+    color: white;
+    height: 88vh;
+    border-radius: 2%;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.img-sec{
+    margin-left: 3%;
+    color: white;
+    height: 92vh;
+    border-radius: 2%;
+    background-color: black;
+    opacity: 0.9;
+}
+
+#image1{
+    padding-top: 10%;
+    /* margin-top: 10%; */
+}
+
+
+
 #formBox{
-    background-color: #0bc2b3;
+    /* background-color: #0bc2b3; */
     padding: 5%;
     border-radius: 3%;
     box-shadow: 6px 5px 6px black;
