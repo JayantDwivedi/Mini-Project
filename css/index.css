@@ -169,6 +169,7 @@ hr {
 
 h1{
     font-size: 72px;
+    font-family: 'Sansita Swashed', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
