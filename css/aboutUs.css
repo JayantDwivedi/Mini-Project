@@ -15,7 +15,12 @@ body {
 
 .bg-black {
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
+    padding: 50px 50px;
+}
+.bg-white {
+    background-color: white;
+    opacity: ;
 }
 
 .youtube-vdo {
@@ -41,6 +46,21 @@ iframe {
     padding-top: 7%;
     padding-right: 2%;
 }
+.card {
+    margin-left: 15%;
+    box-shadow: 5px 5px 5px gray;
+    transition: 0.8s;
+}
+.card:hover {
+    margin-left: 15%;
+    box-shadow: 15px 15px 15px gray;
+    transition: 0.2s;
+}
+.card:active {
+    margin-left: 15%;
+    box-shadow: 2px 2px 2px gray;
+}
+
 
 .sec-1{
     display: flex;
