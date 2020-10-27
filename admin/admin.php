@@ -64,7 +64,7 @@
         <!-- PHP section  -->
 
         <?php
-        require_once "../php/connection.php";   // connection file to connect to the database
+        require_once "../connection.php";   // connection file to connect to the database
 
         $query = "SELECT * FROM `indivisual-house`";   // query for select all the items from database
         $data = mysqli_query($connection, $query);       // fire the query
