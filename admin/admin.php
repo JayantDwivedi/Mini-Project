@@ -31,11 +31,26 @@
 
 <body>
 
+  <?php
+  // Initialize the session
+  session_start();
+
+  // Check if the user is logged in, if not then redirect him to login page
+  if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: login.php");
+    exit;
+  }
+  ?>
+
   <!-- Heading Area  -->
   <div class="row">
     <div class="col-lg-12">
       <nav class="navigation-bar">
         <h1>Admin</h1>
+
+        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+
       </nav>
     </div>
   </div>
