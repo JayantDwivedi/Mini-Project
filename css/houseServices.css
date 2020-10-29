@@ -9,7 +9,7 @@
 
 body{
     
-    background: url("../images/img1-carousel.jpg");
+    background: url("../images/aboout-bg.jpg");
     background-repeat: no-repeat;
     height: 100%;
     background-position: center;
@@ -23,10 +23,11 @@ body{
 #navigationBox{
     
     padding-top: 4%;
+
     color: black;
     background-color: #e0ebeb;
     box-shadow: 6px 5px 6px black;
-    height: 92vh;
+    height: 105vh;
 }
 
 #head{
@@ -35,7 +36,7 @@ body{
 }
 
 #head1{
-    color: white;
+    color: black;
 }
 
 #navigationBox .links ul{
@@ -57,11 +58,11 @@ body{
     margin-top: 75px;
     /* background: url("../images/img1-carousel.jpg");
     background-repeat: no-repeat; */
-    height: 92vh;
+    height: 105vh;
 }
 
 .menu-bar {
-    height: 92vh;
+    height: 95vh;
 }
 
 .service-tag>h1 {
@@ -80,7 +81,7 @@ body{
 .form-sec{
     margin-left: 2%;
     color: white;
-    height: 88vh;
+    height: 95vh;
     border-radius: 2%;
     background-color: black;
     opacity: 0.9;
@@ -88,19 +89,18 @@ body{
 
 .img-sec{
     margin-left: 3%;
+    margin-top: 8%;
     color: white;
-    height: 92vh;
+    height: 93vh;
     border-radius: 2%;
-    background-color: black;
-    opacity: 0.9;
+    /* background-color: black;
+    opacity: 0.9; */
 }
 
 #image1{
     padding-top: 10%;
     /* margin-top: 10%; */
 }
-
-
 
 #formBox{
     /* background-color: #0bc2b3; */

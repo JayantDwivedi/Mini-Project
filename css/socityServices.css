@@ -26,7 +26,7 @@ body{
     color: black;
     background-color: #e0ebeb;
     box-shadow: 6px 5px 6px black;
-    height: 103vh;
+    height: 112vh;
 }
 
 #head{
@@ -57,7 +57,7 @@ body{
     margin-top: 75px;
     /* background: url("../images/img1-carousel.jpg");
     background-repeat: no-repeat; */
-    height: 103vh;
+    height: 112vh;
 }
 
 .menu-bar {
@@ -72,7 +72,7 @@ body{
 .form-sec{
     margin-left: 2%;
     color: white;
-    height: 98vh;
+    height: 103vh;
     border-radius: 2%;
     background-color: black;
     opacity: 0.9;
@@ -80,11 +80,12 @@ body{
 
 .img-sec{
     margin-left: 3%;
+    margin-top: 8%;
     color: white;
-    height: 98vh;
+    height: 93vh;
     border-radius: 2%;
-    background-color: black;
-    opacity: 0.9;
+    /* background-color: black;
+    opacity: 0.9; */
 }
 
 #image1{
