@@ -5,6 +5,7 @@
 
 .navigation-bar {
     background: linear-gradient(to right, #17A2B8, white, #17A2B8);
+    border: 2px solid red;
 }
 
 .navigation-bar>h1 {
@@ -12,7 +13,10 @@
     text-transform: uppercase;
     color: #17A2B8;
     padding: 25px;
+
 }
+
+
 
 .panel {
     margin-top: -8px;
