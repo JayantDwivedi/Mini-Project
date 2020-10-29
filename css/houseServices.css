@@ -35,9 +35,6 @@ body{
  
 }
 
-#head1{
-    color: black;
-}
 
 #navigationBox .links ul{
     list-style: none;
@@ -46,10 +43,12 @@ body{
 
 #navigationBox .links ul li a{
     text-decoration: none;
+    /* padding: 10%; */
     color: black;
 }
 
 #navigationBox  .links ul li a:hover{
+    
     color: rgb(87, 75, 54);
 }
 
@@ -67,6 +66,7 @@ body{
 
 .service-tag>h1 {
     text-align: center;
+    color: black;
 }
 
 .service-tag{

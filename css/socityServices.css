@@ -35,11 +35,12 @@ body{
 }
 
 #head1{
-    color: white;
+    color: black;
 }
 
 #navigationBox .links ul{
     list-style: none;
+    
     text-align: center;
 }
 
