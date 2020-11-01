@@ -4,7 +4,7 @@ session_start();
 
 // Check if the user is logged in, if not then redirect to login page
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: login.php");
+    header("location: index.php");
     exit;
 }
 
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (mysqli_stmt_execute($stmt)) {
                 // Password updated successfully. Destroy the session, and redirect to index page
                 session_destroy();
-                header("location: login.php");
+                header("location: index.php");
                 exit();
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
@@ -80,11 +80,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style type="text/css">
         body {
             font: 14px sans-serif;
+            background: linear-gradient(to right, #FFD8A0, #FFBCA0, #FF989E, #FF739B);
         }
 
         .wrapper {
             width: 350px;
             padding: 20px;
+            background-color: lightsalmon;
+            border: 2px red solid;
+            display: block;
+            width: 20%;
+            height: 30%;
+            margin: auto;
+            margin-top: 15%;
+            text-align: center;
+            border-radius: 20px;
+
         }
     </style>
 </head>
@@ -92,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="wrapper">
         <h2>Reset Password</h2>
-        <p>Please fill out this form to reset your password.</p>
+        <!-- <p>Please fill out this form to reset your password.</p> -->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                 <label>New Password</label>

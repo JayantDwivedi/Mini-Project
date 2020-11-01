@@ -1,4 +1,3 @@
-
 <?php
 // Initialize the session
 session_start();
@@ -99,19 +98,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style type="text/css">
         body {
             font: 14px sans-serif;
+            background: linear-gradient(to right, #B1155F, #491557, #1A1C66, #160D22);
         }
 
         .wrapper {
             width: 350px;
             padding: 20px;
+            background-color: lightblue;
+            border: 2px red solid;
+            display: block;
+            width: 20%;
+            height: 30%;
+            margin: auto;
+            margin-top: 15%;
+            text-align: center;
+            border-radius: 20px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <h2>Login-SanServ Admin</h2>
+        <!-- <p>Please fill in your credentials to login.</p> -->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
@@ -129,6 +139,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>
+
+
 </body>
 
 </html>
