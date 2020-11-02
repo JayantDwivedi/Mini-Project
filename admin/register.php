@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
                 // Redirect to login/index page
-                header("location: login.php");
+                header("location: index.php");
             } else {
                 echo "Something went wrong. Please try again later.";
             }
@@ -103,19 +103,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style type="text/css">
         body {
             font: 14px sans-serif;
+            background: linear-gradient(to right, #3872EF, #10E9CB, #BADE86, #D2DB7A);
+
         }
 
         .wrapper {
             width: 350px;
             padding: 20px;
+            background-color: lightblue;
+            border: 2px solid blueviolet;
+            display: block;
+            width: 20%;
+            height: 30%;
+            margin: auto;
+            margin-top: 15%;
+            text-align: center;
+            border-radius: 20px;
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+        <h2>Sign Up-SanServ Admin</h2>
+        <!-- <p>Please fill this form to create an account.</p> -->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
@@ -136,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            <p>Already have an account? <a href="index.php">Login here</a>.</p>
         </form>
     </div>
 </body>
