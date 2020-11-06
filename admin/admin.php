@@ -51,13 +51,13 @@
       <section class="dashboard">
         <!-- <h1>Dashboard</h1> -->
         <ul>
-          <li><a href="#"><i class="fa fa-home"><span>Indivisual House</span></i></a></li>
-          <li><a href="#"><i class="fa fa-building"><span>Residential Society</span></i></a></li>
-          <li><a href="#"><i class="fa fa-briefcase"><span>Co-Operate Office</span></i></a></li>
-          <li><a href="#"><i class="fa fa-graduation-cap"><span>School & Colleges</span></i></a></li>
-          <li><a href="#"><i class="fa fa-cutlery"><span>Hotel & Restaurant</span></i></a></li>
-          <li><a href="#"><i class="fa fa-car"><span>Car & Jeep</span></i></a></li>
-          <li><a href="#"><i class="fa fa-h-square"><span>Hospital & Clinic</span></i></a></li>
+          <li><a href="admin.php"><i class="fa fa-home"><span>Indivisual House</span></i></a></li>
+          <li><a href="society-admin.php"><i class="fa fa-building"><span>Residential Society</span></i></a></li>
+          <li><a href="office-admin.php"><i class="fa fa-briefcase"><span>Co-Operate Office</span></i></a></li>
+          <li><a href="school-admin.php"><i class="fa fa-graduation-cap"><span>School & Colleges</span></i></a></li>
+          <li><a href="hotel-admin.php"><i class="fa fa-cutlery"><span>Hotel & Restaurant</span></i></a></li>
+          <li><a href="car-admin.php"><i class="fa fa-car"><span>Car & Jeep</span></i></a></li>
+          <li><a href="hospital-admin.php"><i class="fa fa-h-square"><span>Hospital & Clinic</span></i></a></li>
         </ul>
       </section>
     </div>
