@@ -7,7 +7,7 @@
   <title>SanServ-Admin</title>
 
   <!-- Custom CSS  -->
-  <link rel="stylesheet" href="../css/admin.css" media="all">
+  <link rel="stylesheet" href="../css/admin.css?v=<?php echo time(); ?>">
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -15,18 +15,6 @@
   <!-- Font Awsome CDN  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <style>
-    td,
-    th {
-      padding: 10px;
-      border: 2px solid #17A2B8;
-    }
-
-    tr:hover {
-      background-color: gray;
-
-    }
-  </style>
 </head>
 
 <body>
@@ -42,30 +30,16 @@
   }
   ?>
 
-  <!-- Heading Area 
-  <div class="row">
-    <nav class="navigation-bar">
-      <div class="col-log 8">
-        <h1>Admin</h1>
-      </div>
-      <div class="col-lg-2">
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-      </div>
-      <div class="col-lg-2">
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-      </div>
-    </nav>
-  </div> -->
   <nav class="navigation-bar">
     <div class="row">
       <div class="col-lg-8 admin-heading">
         <h1>Admin</h1>
       </div>
       <div class="col-lg-2">
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
       </div>
       <div class="col-lg-2">
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+        <a href="logout.php" class="btn btn-danger">Sign Out</a>
       </div>
     </div>
   </nav>
