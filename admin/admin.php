@@ -70,7 +70,7 @@
         <?php
         require_once "../connection.php";   // connection file to connect to the database
 
-        $query = "SELECT * FROM `indivisual-house`";   // query for select all the items from database
+        $query = "SELECT * FROM `houseservice`";   // query for select all the items from database
         $data = mysqli_query($connection, $query);       // fire the query
         // echo $data . "$data";
         $totalRecord = mysqli_num_rows($data);         // check for total no of records in databse
@@ -84,8 +84,12 @@
         <table>
           <tr>
             <th>Name</th>
+            <th>Mobile</th>
             <th>Email</th>
             <th>Address</th>
+            <th>Contact Time</th>
+            <th>Contact Date</th>
+            <th>Special Comment</th>
           </tr>
 
           <?php
@@ -93,8 +97,12 @@
             echo "
                 <tr>
                   <td>" . $result['name'] . "</td>
+                  <td>" . $result['mobile'] . "</td>
                   <td>" . $result['email'] . "</td>
                   <td>" . $result['address'] . "</td>
+                  <td>" . $result['time'] . "</td>
+                  <td>" . $result['date'] . "</td>
+                  <td>" . $result['comment'] . "</td>
                 </tr>
                 ";
           }
