@@ -8,12 +8,10 @@
 }
 
 body{
+    background-image: linear-gradient(rgb(110, 110, 77),rgb(58, 42, 42));
     
-    background: url("../images/aboout-bg.jpg");
-    background-repeat: no-repeat;
     height: 100%;
-    background-position: center;
-    background-size: cover;
+    
 }
 
 #navigationBar{
@@ -23,7 +21,6 @@ body{
 #navigationBox{
     
     padding-top: 4%;
-
     color: black;
     background-color: #e0ebeb;
     box-shadow: 6px 5px 6px black;
@@ -69,14 +66,6 @@ body{
     color: black;
 }
 
-.service-tag{
-    /* background: url("../images/img1-carousel.jpg");
-    background-repeat: no-repeat;
-    height: 92vh;
-    background-position: center;
-    background-size: cover; */
-
-}
 
 .form-sec{
     margin-left: 2%;

@@ -8,12 +8,8 @@
 }
 
 body{
-    
-    background: url("../images/img1-carousel.jpg");
-    background-repeat: no-repeat;
     height: 100%;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(rgb(110, 110, 77),rgb(58, 42, 42));
 }
 
 #navigationBar{
@@ -26,7 +22,7 @@ body{
     color: black;
     background-color: #e0ebeb;
     box-shadow: 6px 5px 6px black;
-    height: 112vh;
+    height: 116vh;
 }
 
 #head{
@@ -56,9 +52,7 @@ body{
 
 .background-img{
     margin-top: 75px;
-    /* background: url("../images/img1-carousel.jpg");
-    background-repeat: no-repeat; */
-    height: 112vh;
+    height: 116vh;
 }
 
 .menu-bar {
@@ -73,10 +67,10 @@ body{
 .form-sec{
     margin-left: 2%;
     color: white;
-    height: 103vh;
+    height: 106vh;
     border-radius: 2%;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .img-sec{

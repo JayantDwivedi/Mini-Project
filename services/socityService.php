@@ -7,7 +7,7 @@
     <title>SANSERV | Services | Society Service</title>
 
     <!-- Custom Bootstrap  -->
-    <link rel="stylesheet" href="../css/socityServices.css">
+    <link rel="stylesheet" href="../css/socityServices.css?v=<?php echo time(); ?>">
 
     <!-- Bootstrap CDN  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -32,16 +32,16 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="../services/houseService.php">Services</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="../aboutUs.html">About Us</a>
                 </li>
 
                 <li class="nav-item">
@@ -49,7 +49,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="../contactUs.html">Contact Us</a>
                 </li>
 
             </ul>
@@ -68,14 +68,14 @@
                 <div id="navigationBox">
                     <h4 id="head">Quick Links</h4>
                     <ul>
-                        <li class="py-4 my-2"><a href="houseService.html"> House Sanitization </a></li>
-                        <li class="py-4 my-2"><a href="socityService.html">Society Sanitization </a></li>
-                        <li class="py-4 my-2"><a href="officeService.html">Office Sanitization </a></li>
-                        <li class="py-4 my-2"><a href="wareHouseService.html">Warehouse Sanitization </a></li>
-                        <li class="py-4 my-2"><a href="schoolService.html">School Sanitization </a></li>
-                        <li class="py-4 my-2"><a href="hospitalService.html">Hospital Sanitization </a></li>
-                        <li class="py-4 my-2"><a href="hotelService.html">Hotel Sanitization </a></li>
-                        <li class="py-4 my-4"><a href="carService.html">Car Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="socityService.php">Society Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="officeService.php">Office Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="wareHouseService.php">Warehouse Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="schoolService.php">School Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="hospitalService.php">Hospital Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="hotelService.php">Hotel Sanitization </a></li>
+                        <li class="py-4 my-4"><a href="carService.php">Car Sanitization </a></li>
                     </ul>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                                     <br>
                                     <textarea name="comment" id="" cols="74"></textarea>
 
-                                    <br>
+                                    <br><br>
                                     <button type="submit" name="b1" class="btn btn-secondary">Submit</button>
 
                                 </form>
