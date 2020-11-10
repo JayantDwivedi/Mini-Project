@@ -9,6 +9,9 @@
   <!-- Custom CSS  -->
   <link rel="stylesheet" href="../css/admin.css?v=<?php echo time(); ?>">
 
+  <!-- favicon  -->
+  <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
+
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -74,7 +77,7 @@
         $data = mysqli_query($connection, $query);       // fire the query
         // echo $data . "$data";
         $totalRecord = mysqli_num_rows($data);         // check for total no of records in databse
-        echo $totalRecord;
+        // echo $totalRecord;
         if ($totalRecord == 0) {
           echo "No record found";
         }
@@ -82,6 +85,9 @@
 
         <!-- Table to show the data from databse  -->
         <table>
+          <h1>
+            <center>House Services</center>
+          </h1>
           <tr>
             <th>Name</th>
             <th>Mobile</th>
@@ -94,6 +100,7 @@
 
           <?php
           while ($result = mysqli_fetch_assoc($data)) {
+            header("refresh: 5");
             echo "
                 <tr>
                   <td>" . $result['name'] . "</td>
