@@ -85,7 +85,7 @@
 
                 <!-- Table to show the data from databse  -->
                 <table>
-                    <h1 style="text-align: center;">School & College-Service</h1>
+                    <h1 class="table-head">School & College-Service</h1>
                     <tr>
                         <th>Name</th>
                         <th>Mobile</th>

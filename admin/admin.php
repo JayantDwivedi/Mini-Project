@@ -84,10 +84,8 @@
         ?>
 
         <!-- Table to show the data from databse  -->
+        <h1 class="table-head">House Service</h1>
         <table>
-          <h1>
-            <center>House Services</center>
-          </h1>
           <tr>
             <th>Name</th>
             <th>Mobile</th>

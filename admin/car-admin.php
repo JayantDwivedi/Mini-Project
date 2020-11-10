@@ -85,7 +85,7 @@
 
                 <!-- Table to show the data from databse  -->
                 <table>
-                    <h1 style="text-align: center;">Car-Service</h1>
+                    <h1 class="table-head">Car-Service</h1>
                     <tr>
                         <th>Name</th>
                         <th>Mobile</th>
