@@ -18,6 +18,9 @@
     <!-- Font Awsome CDN  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -79,7 +82,7 @@
                 $totalRecord = mysqli_num_rows($data);         // check for total no of records in databse
                 // echo $totalRecord;
                 if ($totalRecord == 0) {
-                    echo "No record found";
+                    echo "<p style='color:red;text-align:center; margin-top:10px;margin-bottom:10px;border:2px solid pink;border-radius:2px; font-size:24px; background-color:pink;'><strong>" . "No Record Found" . "</strong></p>";
                 }
                 ?>
 
@@ -95,6 +98,7 @@
                         <th>Contact Date</th>
                         <th>Rooms</th>
                         <th>Special Comment</th>
+                        <th>Operations</th>
                     </tr>
 
                     <?php
@@ -110,6 +114,7 @@
                   <td>" . $result['date'] . "</td>
                   <td>" . $result['rooms'] . "</td>
                   <td>" . $result['comment'] . "</td>
+                  <td><a href='delete/delete-school.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'><i style='color:red;font-size:24px;' class='fa fa-trash'></i></a></h4></td>
                 </tr>
                 ";
                     }
@@ -121,6 +126,24 @@
     </div>
 
     <!-- Footer Section  -->
+    <div class="row">
+        <div class="col-lg-12">
+            <footer>
+                <h4>SanServ @2020 Admin-Panel</h4>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function DeleteRecord() {
+            confirm("Do you want to delete");
+        }
+    </script>
+
+
 
 
 

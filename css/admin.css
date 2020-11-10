@@ -79,6 +79,10 @@ table .card-header {
     text-align: center;
 }
 
+table {
+    margin: 5% auto 5% auto;
+}
+
 .table-head {
     text-align: center;
     margin-top: 30px;
@@ -108,7 +112,10 @@ tr:hover {
 
 footer {
     background-color: #17A2B8;
+    font-family: 'Italianno', cursive;
     color: white;
+    margin-bottom: 0;
+    padding: 20px;
 }
 
 footer>h4 {
