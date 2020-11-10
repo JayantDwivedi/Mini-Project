@@ -94,6 +94,7 @@
             <th>Contact Time</th>
             <th>Contact Date</th>
             <th>Special Comment</th>
+            <th>Operations</th>
           </tr>
 
           <?php
