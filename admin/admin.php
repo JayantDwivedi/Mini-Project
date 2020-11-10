@@ -108,6 +108,7 @@
                   <td>" . $result['time'] . "</td>
                   <td>" . $result['date'] . "</td>
                   <td>" . $result['comment'] . "</td>
+                  <td><a href='delete.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'>Delete</a></h4></td>
                 </tr>
                 ";
           }
@@ -119,6 +120,11 @@
   </div>
 
   <!-- Footer Section  -->
+  <script>
+    function DeleteRecord() {
+      confirm("Do you want to delete");
+    }
+  </script>
 
 
 
