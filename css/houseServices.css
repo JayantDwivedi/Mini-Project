@@ -9,9 +9,7 @@
 
 body{
     background-image: linear-gradient(rgb(110, 110, 77),rgb(58, 42, 42));
-    
     height: 100%;
-    
 }
 
 #navigationBar{
@@ -22,38 +20,34 @@ body{
     
     padding-top: 4%;
     color: black;
-    background-color: #e0ebeb;
+    background-color:  #386e6e;
     box-shadow: 6px 5px 6px black;
     height: 105vh;
 }
 
 #head{
     text-align: center;
- 
 }
 
 
-#navigationBox .links ul{
+#navigationBox ul{
     list-style: none;
     text-align: center;
 }
 
-#navigationBox .links ul li a{
+#navigationBox ul li a{
     text-decoration: none;
-    /* padding: 10%; */
     color: black;
 }
 
-#navigationBox  .links ul li a:hover{
+#navigationBox ul li a:hover{
     
-    color: rgb(87, 75, 54);
+    color: rgb(177, 136, 66);
 }
 
 
 .background-img{
-    margin-top: 75px;
-    /* background: url("../images/img1-carousel.jpg");
-    background-repeat: no-repeat; */
+    margin-top: 71px;
     height: 105vh;
 }
 
@@ -72,8 +66,8 @@ body{
     color: white;
     height: 95vh;
     border-radius: 2%;
-    background-color: black;
-    opacity: 0.9;
+    background-color: black; 
+    opacity: 0.8;
 }
 
 .img-sec{

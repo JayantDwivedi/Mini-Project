@@ -31,7 +31,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
+                <li class="nav-item ">
                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
 
@@ -65,9 +65,9 @@
 
             <div class="col-lg-2 menu-bar">
                 <div id="navigationBox">
-                    <h4 id="head">Quick Links</h4>
+                    <h4 id="head"><b> Quick Links </b></h4>
                     <ul>
-                    <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
                         <li class="py-4 my-2"><a href="socityService.php">Society Sanitization </a></li>
                         <li class="py-4 my-2"><a href="officeService.php">Office Sanitization </a></li>
                         <li class="py-4 my-2"><a href="wareHouseService.php">Warehouse Sanitization </a></li>

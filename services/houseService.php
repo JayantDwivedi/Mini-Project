@@ -67,7 +67,7 @@
                 <div id="navigationBox">
                     <h4 id="head">Quick Links</h4>
                     <ul>
-                    <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
                         <li class="py-4 my-2"><a href="socityService.php">Society Sanitization </a></li>
                         <li class="py-4 my-2"><a href="officeService.php">Office Sanitization </a></li>
                         <li class="py-4 my-2"><a href="wareHouseService.php">Warehouse Sanitization </a></li>

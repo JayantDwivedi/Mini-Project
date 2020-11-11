@@ -1,5 +1,8 @@
-/* It is added to socity, office, warehouse,
+/* 
+
+    It is added to socity, office, warehouse,
     school, hotel.
+    
 */
 *{
     padding:0 ;
@@ -20,38 +23,32 @@ body{
     
     padding-top: 4%;
     color: black;
-    background-color: #e0ebeb;
+    background-color: #386e6e;
     box-shadow: 6px 5px 6px black;
     height: 116vh;
 }
 
 #head{
     text-align: center;
- 
 }
 
-#head1{
-    color: black;
-}
-
-#navigationBox .links ul{
+#navigationBox ul{
     list-style: none;
-    
     text-align: center;
 }
 
-#navigationBox .links ul li a{
+#navigationBox ul li a{
     text-decoration: none;
     color: black;
 }
 
-#navigationBox  .links ul li a:hover{
-    color: rgb(87, 75, 54);
+#navigationBox ul li a:hover{
+    color:rgb(177, 136, 66);;
 }
 
 
 .background-img{
-    margin-top: 75px;
+    margin-top: 71px;
     height: 116vh;
 }
 
@@ -61,6 +58,7 @@ body{
 
 .service-tag>h1 {
     text-align: center;
+    color: black;
 }
 
 
@@ -79,8 +77,6 @@ body{
     color: white;
     height: 93vh;
     border-radius: 2%;
-    /* background-color: black;
-    opacity: 0.9; */
 }
 
 #image1{
@@ -191,4 +187,275 @@ hr{
 
 .sec-2 ul li:nth-child(5):hover{
     background-color: #ea4c89;
+} 
+
+@media (max-width:872px)
+{
+    
+    
+    .sec-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 10px;
+    }
+    
+    .about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .sec-1 h2{
+        font-size: 18px;
+        color: lightgray;
+        text-transform: uppercase;
+    }
+    
+    .about p{
+        text-align: justify;
+        color: lightgray;
+        line-height: 34px;
+        margin-top: 10px;
+    }
+    
+    .sec-1 ul{
+        list-style: none;
+    
+    }
+    
+    .sec-1 ul li {
+        padding:5px;
+    
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    a:hover{
+        color: orange;
+    }
+    
+    span{
+        color: grey;
+    }
+    
+    i{
+        color:grey;
+        font-size: 20px;
+    }
+    
+    hr{
+        opacity: .2;
+    }
+    
+    .sec-2{
+        display:flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: centers;
+    }
+    
+    .sec-2 p{
+        padding-top: 5px;
+        color: gray;
+        font-size: 25px;
+    }
+    
+    .sec-2 a{
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 22px;
+    }
+    
+    .sec-2 a:hover{
+        background-color: orange ;
+    }
+    
+    
+}
+
+@media (max-width:499px){
+    .main-content{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: grey;
+    
+    }
+    
+    footer{
+        width: 100%;
+        background-color: #26272b;
+    }
+    
+    .sec-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 10px;
+        text-align: center;    
+    }
+    
+    .about{
+        width: 100%;
+    }
+    
+    .sec-1 h2{
+        font-size: 18px;
+        color: lightgray;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    
+    .about p{
+        text-align: justify;
+        color: lightgray;
+        line-height: 34px;
+        margin-top: 10px;
+    }
+    
+    .sec-1 ul{
+        list-style: none;
+    
+    }
+    
+    .sec-1 ul li {
+        padding:5px;
+    
+    }
+    
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    a:hover{
+        color: orange;
+    }
+    
+    span{
+        color: grey;
+    }
+    
+    i{
+        color:grey;
+        font-size: 20px;
+    }
+    
+    hr{
+        opacity: .2;
+    }
+    
+    .sec-2{
+        display:flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: centers;
+    }
+    
+    .sec-2 p{
+        padding-top: 5px;
+        color: gray;
+        font-size: 25px;
+    }
+    
+    .sec-2 a{
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 22px;
+    }
+    
+    .sec-2 a:hover{
+        background-color: orange ;
+    }
+    
+    .sec-3{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .sec-3 ul{
+        list-style: none;
+        margin:20px;
+    } 
+    
+    .sec-3 ul li{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background-color: #424242;
+        border-radius: 50%;
+        margin-right: 10px;
+    
+    }
+    
+    .sec-3 ul li i{
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .sec-3 ul li:nth-child(1):hover{
+        background-color: #3b5999;
+    }
+    
+    .sec-3 ul li:nth-child(2):hover{
+        background-color: #55acee;
+    }
+    
+    .sec-3 ul li:nth-child(3):hover{
+        background-color: #dd4b39;
+    }
+    
+    .sec-3 ul li:nth-child(4):hover{
+        background-color: #0077B5;
+    }
+    
+    .sec-3 ul li:nth-child(5):hover{
+        background-color: #ea4c89;
+    }
+    
+    .sec-4{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 30px;
+    }
+    
+    .sec-4 p{
+        color: grey;
+        position: relative;
+    }
+    
+    .sec-4 p::after{
+        content:'';
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        background-color: yellow;
+        transition: all .3s;
+    }
+    
+    .sec-4 p:hover::after{
+        width: 100%;
+    }
+    
 }
