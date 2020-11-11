@@ -70,7 +70,7 @@
                 <div id="navigationBox">
                     <h4 id="head">Quick Links</h4>
                     <ul>
-                    <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
+                        <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
                         <li class="py-4 my-2"><a href="socityService.php">Society Sanitization </a></li>
                         <li class="py-4 my-2"><a href="officeService.php">Office Sanitization </a></li>
                         <li class="py-4 my-2"><a href="wareHouseService.php">Warehouse Sanitization </a></li>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-lg-5 img-sec">
                         <!-- <h1 class="text-center">Image</h1> -->
-                        <img src="../images/img2-carousel.jpg" alt="" class="img-fluid mt-5 pt-5" id="image1">
+                        <img src="../images/hotelservice.jpg" alt="" class="img-fluid mt-5 pt-5" id="image1">
 
                     </div>
                 </div>
