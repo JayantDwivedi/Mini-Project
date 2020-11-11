@@ -26,8 +26,8 @@ include_once "../../connection.php";
         <label for="">Name <i class="fa fa-user" aria-hidden="true"></i></label>
         <input type="text" name="name" value="<?php echo $_GET['rn']; ?>"><br></br>
 
-        <!-- <label for="">Mobile <i class="fa fa-mobile" aria-hidden="true"></i></label>
-        <input type="text" name="mobile" value="<?php echo $_GET['nm']; ?>"><br></br> -->
+        <label for="">Mobile <i class="fa fa-mobile" aria-hidden="true"></i></label>
+        <input type="text" name="mobile" readonly value="<?php echo $_GET['nm']; ?>"><br></br>
 
         <label for="">Email <i class="fa fa-envelope" aria-hidden="true"></i></label>
         <input type="text" name="email" value="<?php echo $_GET['cl']; ?>"><br></br>
@@ -42,7 +42,7 @@ include_once "../../connection.php";
         <input type="date" name="date" value="<?php echo $_GET['dt']; ?>"><br></br>
 
         <label for="">Comment <i class="fa fa-comments-o" aria-hidden="true"></i></label>
-        <textarea name="comments" cols="50" rows="5" value="<?php echo $_GET['cm']; ?>"></textarea> <br><br>
+        <textarea name="comments" cols="50" rows="5"><?php echo $_GET['cm']; ?></textarea> <br><br>
 
 
         <input type="submit" name="b1" Value="Update">
