@@ -114,7 +114,8 @@
                   <td>" . $result['date'] . "</td>
                   <td>" . $result['area'] . "</td>
                   <td>" . $result['comment'] . "</td>
-                  <td><a href='delete/delete-office.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'><i style='color:red;font-size:24px;' class='fa fa-trash'></i></a></h4></td>
+                  <td><a href='delete/delete-office.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'><i style='color:red;font-size:24px;' class='fa fa-trash'></i></a></h4>
+                  <a href='update/update-office.php?rn=$result[name]&nm=$result[mobile]&cl=$result[email]&ad=$result[address]&tm=$result[time]&dt=$result[date]&ar=$result[area]&cm=$result[comment]'><i style='color:blue;font-size:24px;margin-left:25px;' class='fa fa-pencil'></i></a></td>
                 </tr>
                 ";
                     }
