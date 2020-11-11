@@ -64,6 +64,7 @@
                     <li><a href="hotel-admin.php"><i class="fa fa-cutlery"><span>Hotel & Restaurant</span></i></a></li>
                     <li><a href="car-admin.php"><i class="fa fa-car"><span>Car & Jeep</span></i></a></li>
                     <li><a href="hospital-admin.php"><i class="fa fa-h-square"><span>Hospital & Clinic</span></i></a></li>
+                    <li><a href="warehouse-admin.php"><i class="fa fa-industry"><span>Warehouse</span></i></a></li>
                 </ul>
             </section>
         </div>

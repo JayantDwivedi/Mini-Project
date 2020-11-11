@@ -13,7 +13,7 @@ include_once "../../connection.php";
     <link rel="icon" href="../../images/logo.png" type="image/png" sizes="16x16">
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="../../css/update.css">
+    <link rel="stylesheet" href="../../css/update.css?v=<?php echo time(); ?>">
 
     <!-- Font Awsome CDN  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -22,30 +22,48 @@ include_once "../../connection.php";
 </head>
 
 <body>
+    <h1>House Record Update</h1>
     <form action="" method="GET">
-        <label for="">Name <i class="fa fa-user" aria-hidden="true"></i></label>
-        <input type="text" name="name" value="<?php echo $_GET['rn']; ?>"><br></br>
+        <table>
+            <tr>
+                <td><label for="">Name <i class="fa fa-user" aria-hidden="true"></i></label></td>
+                <td><input type="text" name="name" value="<?php echo $_GET['rn']; ?>"><br></br></td>
+            </tr>
 
-        <label for="">Mobile <i class="fa fa-mobile" aria-hidden="true"></i></label>
-        <input type="text" name="mobile" readonly value="<?php echo $_GET['nm']; ?>"><br></br>
+            <tr>
+                <td><label for="">Mobile <i class="fa fa-mobile" aria-hidden="true"></i></label></td>
+                <td><input type="text" name="mobile" readonly value="<?php echo $_GET['nm']; ?>"><br></br></td>
+            </tr>
 
-        <label for="">Email <i class="fa fa-envelope" aria-hidden="true"></i></label>
-        <input type="text" name="email" value="<?php echo $_GET['cl']; ?>"><br></br>
+            <tr>
+                <td><label for="">Email <i class="fa fa-envelope" aria-hidden="true"></i></label></td>
+                <td><input type="text" name="email" value="<?php echo $_GET['cl']; ?>"><br></br></td>
+            </tr>
 
-        <label for="">Address <i class="fa fa-map-marker" aria-hidden="true"></i></label>
-        <input type="text" name="address" value="<?php echo $_GET['ad']; ?>"><br></br>
+            <tr>
+                <td><label for="">Address <i class="fa fa-map-marker" aria-hidden="true"></i></label></td>
+                <td><input type="text" name="address" value="<?php echo $_GET['ad']; ?>"><br></br></td>
+            </tr>
 
-        <label for="">Time <i class="fa fa-clock-o" aria-hidden="true"></i></label>
-        <input type="time" name="time" value="<?php echo $_GET['tm']; ?>"><br></br>
+            <tr>
+                <td><label for="">Time <i class="fa fa-clock-o" aria-hidden="true"></i></label></td>
+                <td><input type="time" name="time" value="<?php echo $_GET['tm']; ?>"><br></br></td>
+            </tr>
 
-        <label for="">Date <i class="fa fa-calendar" aria-hidden="true"></i></label>
-        <input type="date" name="date" value="<?php echo $_GET['dt']; ?>"><br></br>
+            <tr>
+                <td><label for="">Date <i class="fa fa-calendar" aria-hidden="true"></i></label></td>
+                <td><input type="date" name="date" value="<?php echo $_GET['dt']; ?>"><br></br></td>
+            </tr>
 
-        <label for="">Comment <i class="fa fa-comments-o" aria-hidden="true"></i></label>
-        <textarea name="comments" cols="50" rows="5"><?php echo $_GET['cm']; ?></textarea> <br><br>
+            <tr>
+                <td><label for="">Comment <i class="fa fa-comments-o" aria-hidden="true"></i></label></td>
+                <td><textarea name="comments" cols="50" rows="5"><?php echo $_GET['cm']; ?></textarea> <br><br></td>
+            </tr>
 
-
-        <input type="submit" name="b1" Value="Update">
+            <tr>
+                <td><input type="submit" name="b1" id="submit-btn" Value="Update"></td>
+            </tr>
+        </table>
     </form>
 </body>
 
@@ -65,9 +83,9 @@ if (isset($_GET['b1'])) {
         $query = "UPDATE `houseservice` SET `name` = '$name', `email` = '$email', `mobile` = '$mobile', `address` = '$address', `time` = '$time', `date` = '$date', `comment` = '$comments' WHERE `houseservice`.`mobile` = '$mobile';";
         $data = mysqli_query($connection, $query);
         if ($data) {
-            echo "<p style='color:green'>Record Updated Succesfully <a href='http://localhost/Mini-Project/admin/admin.php'>Click this to see updated Records</a>";
+            echo "<p style='color:green;font-size:25px;text-align:center;'>Record Updated Succesfully <a href='http://localhost/Mini-Project/admin/admin.php'>Updated Record</a>";
         } else {
-            echo "Record not Updated ";
+            echo "<p style='color:red;text-align:center; margin-top:10px;margin-bottom:10px;border:2px solid pink;border-radius:2px; font-size:24px; background-color:pink;'><strong>" . "Record not updated" . "</strong></p>";
         }
     } else {
         echo "All Fields are required";

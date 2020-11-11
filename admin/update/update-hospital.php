@@ -18,23 +18,24 @@ include_once "../../connection.php";
     <!-- Font Awsome CDN  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <title>Edit-School-Records</title>
+    <title>Edit-Hospital-Record</title>
 </head>
 
 <body>
-    <h1>School & College Record Update</h1>
+    <h1>Hospital Record Update</h1>
     <form action="" method="GET">
         <table>
+
             <tr>
-                <td> <label for="">Name <i class="fa fa-user" aria-hidden="true"></i></label></td>
-                <td> <input type="text" name="name" value="<?php echo $_GET['rn']; ?>"><br></br></td>
+                <td><label for="">Name <i class="fa fa-user" aria-hidden="true"></i></label></td>
+                <td><input type="text" name="name" value="<?php echo $_GET['rn']; ?>"><br></br></td>
             </tr>
             <tr>
-                <td> <label for="">Mobile <i class="fa fa-mobile" aria-hidden="true"></i></label></td>
+                <td><label for="">Mobile <i class="fa fa-mobile" aria-hidden="true"></i></label></td>
                 <td> <input type="text" name="mobile" readonly value="<?php echo $_GET['nm']; ?>"><br></br></td>
             </tr>
             <tr>
-                <td> <label for="">Email <i class="fa fa-envelope" aria-hidden="true"></i></label></td>
+                <td><label for="">Email <i class="fa fa-envelope" aria-hidden="true"></i></label></td>
                 <td> <input type="text" name="email" value="<?php echo $_GET['cl']; ?>"><br></br></td>
             </tr>
             <tr>
@@ -50,19 +51,13 @@ include_once "../../connection.php";
                 <td> <input type="date" name="date" value="<?php echo $_GET['dt']; ?>"><br></br></td>
             </tr>
             <tr>
-                <td> <label for="">Rooms <i class="fa fa-calendar" aria-hidden="true"></i></label></td>
-                <td> <input type="numbers" name="rooms" value="<?php echo $_GET['rms']; ?>"><br></br></td>
-            </tr>
-            <tr>
-                <td> <label for="">Comment <i class="fa fa-comments-o" aria-hidden="true"></i></label></td>
+                <td><label for="">Comment <i class="fa fa-comments-o" aria-hidden="true"></i></label></td>
                 <td> <textarea name="comments" cols="50" rows="5" value=""><?php echo $_GET['cm']; ?></textarea> <br><br></td>
             </tr>
-
             <tr>
-                <td><input type="submit" id="submit-btn" name="b1" Value="Update"></td>
+                <td> <input type="submit" id="submit-btn" name="b1" Value="Update"></td>
             </tr>
         </table>
-
     </form>
 </body>
 
@@ -77,13 +72,12 @@ if (isset($_GET['b1'])) {
     $address = $_GET['address'];
     $time = $_GET['time'];
     $date = $_GET['date'];
-    $rooms = $_GET['rooms'];
     $comments = $_GET['comments'];
-    if ($name != "" && $mobile != "" && $email != "" && $address != "" && $time != "" && $date != "" && $comments != "" && $rooms != "") {
-        $query = "UPDATE `schoolservice` SET `name` = '$name', `email` = '$email', `mobile` = '$mobile', `address` = '$address', `time` = '$time', `date` = '$date',`rooms` = '$rooms', `comment` = '$comments' WHERE `schoolservice`.`mobile` = '$mobile';";
+    if ($name != "" && $mobile != "" && $email != "" && $address != "" && $time != "" && $date != "" && $comments != "") {
+        $query = "UPDATE `hospitalservice` SET `name` = '$name', `email` = '$email', `mobile` = '$mobile', `address` = '$address', `time` = '$time', `date` = '$date', `comment` = '$comments' WHERE `hospitalservice`.`mobile` = '$mobile';";
         $data = mysqli_query($connection, $query);
         if ($data) {
-            echo "<p style='color:green;font-size:24px;text-align:center;'>Record Updated Succesfully <a href='http://localhost/Mini-Project/admin/school-admin.php'>UPDATED RECORDS</a>";
+            echo "<p style='color:green;font-size:25px;text-align:center;'>Record Updated Succesfully <a href='http://localhost/Mini-Project/admin/hospital-admin.php'>UPDATED RECORD</a>";
         } else {
             echo "<p style='color:red;text-align:center; margin-top:10px;margin-bottom:10px;border:2px solid pink;border-radius:2px; font-size:24px; background-color:pink;'><strong>" . "Record not updated" . "</strong></p>";
         }
