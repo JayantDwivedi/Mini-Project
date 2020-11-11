@@ -9,6 +9,9 @@
     <!-- Custom Bootstrap  -->
     <link rel="stylesheet" href="../css/socityServices.css?v=<?php echo time(); ?>">
 
+    <!-- favicon  -->
+    <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
+
     <!-- Bootstrap CDN  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
