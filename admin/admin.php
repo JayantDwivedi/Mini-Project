@@ -102,7 +102,7 @@
 
           <?php
           while ($result = mysqli_fetch_assoc($data)) {
-            header("refresh: 5");
+            // header("refresh: 5");
             echo "
                 <tr>
                   <td>" . $result['name'] . "</td>
@@ -112,7 +112,8 @@
                   <td>" . $result['time'] . "</td>
                   <td>" . $result['date'] . "</td>
                   <td>" . $result['comment'] . "</td>
-                  <td><a href='delete/delete-house.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'><i style='color:red;font-size:24px;' class='fa fa-trash'></i></a></h4></td>
+                  <td><a href='delete/delete-house.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'><i style='color:red;font-size:24px;' class='fa fa-trash'></i></a></h4>
+                  <a href='update/update-house.php?rn=$result[name]&nm=$result[mobile]&cl=$result[email]&ad=$result[address]&tm=$result[time]&dt=$result[date]&cm=$result[comment]'><i style='color:blue;font-size:24px;margin-left:25px;' class='fa fa-pencil'></i></a></td>
                 </tr>
                 ";
           }
