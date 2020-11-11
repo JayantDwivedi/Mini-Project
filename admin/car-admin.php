@@ -9,11 +9,17 @@
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="../css/admin.css?v=<?php echo time(); ?>">
 
+    <!-- favicon  -->
+    <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- Font Awsome CDN  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">
 
 </head>
 
@@ -58,6 +64,7 @@
                     <li><a href="hotel-admin.php"><i class="fa fa-cutlery"><span>Hotel & Restaurant</span></i></a></li>
                     <li><a href="car-admin.php"><i class="fa fa-car"><span>Car & Jeep</span></i></a></li>
                     <li><a href="hospital-admin.php"><i class="fa fa-h-square"><span>Hospital & Clinic</span></i></a></li>
+                    <li><a href="warehouse-admin.php"><i class="fa fa-industry"><span>Warehouse</span></i></a></li>
                 </ul>
             </section>
         </div>
@@ -74,14 +81,15 @@
                 $data = mysqli_query($connection, $query);       // fire the query
                 // echo $data . "$data";
                 $totalRecord = mysqli_num_rows($data);         // check for total no of records in databse
-                echo $totalRecord;
+                // echo $totalRecord;
                 if ($totalRecord == 0) {
-                    echo "No record found";
+                    echo "<p style='color:red;text-align:center; margin-top:10px;margin-bottom:10px;border:2px solid pink;border-radius:2px; font-size:24px; background-color:pink;'><strong>" . "No Record Found" . "</strong></p>";
                 }
                 ?>
 
                 <!-- Table to show the data from databse  -->
                 <table>
+                    <h1 class="table-head">Car-Service</h1>
                     <tr>
                         <th>Name</th>
                         <th>Mobile</th>
@@ -90,10 +98,12 @@
                         <th>Contact Time</th>
                         <th>Contact Date</th>
                         <th>Special Comment</th>
+                        <th>Operations</th>
                     </tr>
 
                     <?php
                     while ($result = mysqli_fetch_assoc($data)) {
+                        header("refresh: 5");
                         echo "
                 <tr>
                   <td>" . $result['name'] . "</td>
@@ -103,6 +113,8 @@
                   <td>" . $result['time'] . "</td>
                   <td>" . $result['date'] . "</td>
                   <td>" . $result['comment'] . "</td>
+                  <td><a href='delete/delete-car.php?rn=$result[mobile]' onclick = 'return DeleteRecord()'><i style='color:red;font-size:24px;' class='fa fa-trash'></i></a></h4>
+                  <a href='update/update-car.php?rn=$result[name]&nm=$result[mobile]&cl=$result[email]&ad=$result[address]&tm=$result[time]&dt=$result[date]&cm=$result[comment]'><i style='color:blue;font-size:24px;margin-left:25px;' class='fa fa-pencil'></i></a></td>
                 </tr>
                 ";
                     }
@@ -113,11 +125,24 @@
         </div>
     </div>
 
+
     <!-- Footer Section  -->
+    <div class="row">
+        <div class="col-lg-12">
+            <footer>
+                <h4>SanServ @2020 Admin-Panel</h4>
+            </footer>
+        </div>
+    </div>
 
 
 
 
+    <script>
+        function DeleteRecord() {
+            confirm("Do you want to delete");
+        }
+    </script>
 
 
 

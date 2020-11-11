@@ -60,7 +60,7 @@
     color: white;
 }
 
-re h1 {
+h1 {
     text-align: center;
 }
 
@@ -75,8 +75,18 @@ re h1 {
     transition: 0.8s;
 }
 
-.card-header {
+table .card-header {
     text-align: center;
+}
+
+table {
+    margin: 5% auto 5% auto;
+}
+
+.table-head {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .card-body {
@@ -89,6 +99,11 @@ th {
     border: 2px solid #17A2B8;
 }
 
+th {
+    background-color: #17A2B8;
+    color: white;
+}
+
 
 tr:hover {
     background-color: #B4E1E8;
@@ -97,7 +112,10 @@ tr:hover {
 
 footer {
     background-color: #17A2B8;
+    font-family: 'Italianno', cursive;
     color: white;
+    margin-bottom: 0;
+    padding: 20px;
 }
 
 footer>h4 {
