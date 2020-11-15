@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Contact Us</title>
 
-    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="css/contactUs.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
+
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navigationBar">
-    
+
         <a class="navbar-brand" href="#">SANSERV</a>
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +44,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="contactUs.html">Contact Us</a>
                 </li>
-            
+
             </ul>
 
             <form class="form-inline my-2 my-lg-0">
@@ -65,7 +67,7 @@
                             <li class="py-4">Email : senserv@gmail.com</li>
                             <li class="py-4">Phone No : 9999999999 </li>
                             <li class="py-4">Address : Uttar Pradesh, India</li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -75,41 +77,81 @@
                         <div>
                             <h4 class="text-center">FEEDBACK FORM</h4>
                         </div>
-                
-                        <div >
+
+                        <div>
                             <form action="" method="post">
-                                
+
                                 <div class="form-group">
                                     <label> Username </label>
                                     <input type="text" name="user" autocomplete="off" class="form-control" placeholder="Enter User Name">
                                 </div>
-                
+
                                 <div class="form-group">
                                     <label> E-mail </label>
                                     <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter Email ID">
                                 </div>
-                
-                                <div class="form-group">
+
+                                <!-- <div class="form-group">
                                     <label> Mobile Number </label>
                                     <input type="text" name="mobile" autocomplete="off" class="form-control" placeholder="Enter Mobile Number">
-                                </div>
-    
-                               <div class="form-group">
+                                </div> -->
+
+                                <div class="form-group">
                                     <label> Comments </label>
-                                    <textarea class="form-control" name="comment"></textarea>                           
+                                    <textarea class="form-control" name="comment"></textarea>
                                 </div>
-                
+
                                 <br>
-                                <button type="submit" class="btn btn-secondary">Submit</button>
+                                <button type="submit" name="send-mail" class="btn btn-secondary">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+
         </div>
     </section>
+
+    <?php
+    if (isset($_POST['send-mail'])) {
+        require 'PHPMailerAutoload.php';
+        require 'credentials.php';
+
+        $mail = new PHPMailer;
+
+        // $mail->SMTPDebug = 4;                               // Enable verbose debug output
+
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = EMAIL;                 // SMTP username
+        $mail->Password = PASS;                           // SMTP password
+        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;
+        // TCP port to connect to
+        $mail->AddReplyTo($_POST['email']);
+        $mail->From = EMAIL;
+        $mail->FromName = $_POST['user'];
+        $mail->addAddress(EMAIL, 'SanSevAdmin');     // Add a recipient
+
+
+        // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+        $mail->isHTML(true);                                  // Set email format to HTML
+
+        $mail->Subject = 'Feedback from SanServ';
+        $mail->Body    = $_POST['comment'];
+        // $mail->AltBody = 
+
+        if (!$mail->send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            echo 'Message has been sent';
+        }
+    }
+    ?>
 
     <footer>
 
@@ -120,8 +162,8 @@
                 <ul>
                     <li><a href="#">Sanitization</a></li>
                     <li><a href="#">Pesticides</a></li>
-                    <li><a href="#">Disinfection</a></li>    
-                
+                    <li><a href="#">Disinfection</a></li>
+
                 </ul>
             </section>
 
@@ -131,7 +173,7 @@
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#"> Contribute  </a></li>
+                    <li><a href="#"> Contribute </a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Services</a></li>
                     <!-- <li><a href="#">Disclaimer</a></li> -->
@@ -159,7 +201,7 @@
                 </ul>
             </section>
 
-            
+
         </section>
         <p class="p-3 bg-dark text-white text-center"> © SANSERV | 2020 </p>
 
@@ -167,4 +209,5 @@
     </footer>
 
 </body>
+
 </html>
