@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <!-- favicon  -->
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navigationBar">
 
-        <a class="navbar-brand" href="#">SANSERV</a>
+        <a class="navbar-brand" href="index.html">SANSERV</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,17 +43,13 @@
                     <a class="nav-link" href="aboutUs.html">About Us</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                </li>
-
                 <li class="nav-item active">
-                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    <a class="nav-link" href="contactUs.php">Contact Us</a>
                 </li>
 
             </ul>
 
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="services/houseService.html">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">APPOINTMENT</button>
             </form>
         </div>
@@ -55,20 +57,14 @@
 
     <section id="section1">
         <div class="py-5 my-5">
-            <h2 class="text-center">Contact Us</h2>
+            <h2 class="text-center heading">Contact Us</h2>
         </div>
 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12 px-5 details">
                     <div id="detailsBox">
-                        <h4 id="head">Contact Details</h4>
-                        <ul>
-                            <li class="py-4">Email : senserv@gmail.com</li>
-                            <li class="py-4">Phone No : 9999999999 </li>
-                            <li class="py-4">Address : Uttar Pradesh, India</li>
-
-                        </ul>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.0358614401725!2d79.0339756444907!3d27.233075774682494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397596164f8d8445%3A0x9cca71af1fe4b1a1!2zMjfCsDEzJzU4LjYiTiA3OcKwMDInMDIuNyJF!5e0!3m2!1sen!2sin!4v1605514643761!5m2!1sen!2sin" width="680" height="500" frameborder="0" style="border:0;border-radius:10px;margin-left: 5%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
 
