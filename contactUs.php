@@ -49,7 +49,7 @@
 
             </ul>
 
-            <form class="form-inline my-2 my-lg-0" action="services/houseService.html">
+            <form class="form-inline my-2 my-lg-0" action="services/houseService.php">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">APPOINTMENT</button>
             </form>
         </div>
