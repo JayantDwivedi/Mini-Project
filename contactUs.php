@@ -79,7 +79,7 @@
                         </div>
 
                         <div>
-                            <form action="" method="post">
+                            <form action="messege.php" method="post">
 
                                 <div class="form-group">
                                     <label> Username </label>
@@ -88,7 +88,7 @@
 
                                 <div class="form-group">
                                     <label> E-mail </label>
-                                    <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter Email ID">
+                                    <input type="email" name="email" autocomplete="off" class="form-control" placeholder="Enter Email ID">
                                 </div>
 
                                 <!-- <div class="form-group">
@@ -102,7 +102,8 @@
                                 </div>
 
                                 <br>
-                                <button type="submit" name="send-mail" class="btn btn-secondary">Submit</button>
+                                <button type="submit" name="send-mail" id="submit-btn" class="btn btn-secondary">Submit</button>
+                                <button type="reset" id="reset-btn" class="btn btn-secondary">Reset</button>
                             </form>
                         </div>
                     </div>
@@ -112,47 +113,6 @@
 
         </div>
     </section>
-
-    <?php
-    if (isset($_POST['send-mail'])) {
-        require 'PHPMailerAutoload.php';
-        require 'credentials.php';
-
-        $mail = new PHPMailer;
-
-        // $mail->SMTPDebug = 4;                               // Enable verbose debug output
-
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = EMAIL;                 // SMTP username
-        $mail->Password = PASS;                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 587;
-        // TCP port to connect to
-        $mail->AddReplyTo($_POST['email']);
-        $mail->From = EMAIL;
-        $mail->FromName = $_POST['user'];
-        $mail->addAddress(EMAIL, 'SanSevAdmin');     // Add a recipient
-
-
-        // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-        $mail->isHTML(true);                                  // Set email format to HTML
-
-        $mail->Subject = 'Feedback from SanServ';
-        $mail->Body    = $_POST['comment'];
-        // $mail->AltBody = 
-
-        if (!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-        } else {
-            echo 'Message has been sent';
-        }
-    }
-    ?>
-
     <footer>
 
         <section class="sec-1">
