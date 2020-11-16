@@ -1,52 +1,61 @@
 /* 
     it is added to house and hospital
 */
-*{
-    padding:0 ;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: linear-gradient(rgb(110, 110, 77),rgb(58, 42, 42));
+body {
+    background-image: linear-gradient(rgb(110, 110, 77), rgb(58, 42, 42));
     height: 100%;
 }
 
-#navigationBar{
+#navigationBar {
     height: 70px;
 }
 
-#navigationBox{
-    
+#navigationBox {
+
     padding-top: 4%;
     color: black;
-    background-color:  #386e6e;
+    background-color: #386e6e;
     box-shadow: 6px 5px 6px black;
     height: 105vh;
 }
 
-#head{
+.head {
     text-align: center;
+    font-family: 'Domine', serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#head1 {
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    color: white;
+    margin: 15px auto 15px auto;
 }
 
 
-#navigationBox ul{
+#navigationBox ul {
     list-style: none;
     text-align: center;
 }
 
-#navigationBox ul li a{
+#navigationBox ul li a {
     text-decoration: none;
     color: black;
 }
 
-#navigationBox ul li a:hover{
-    
+#navigationBox ul li a:hover {
+
     color: rgb(177, 136, 66);
 }
 
 
-.background-img{
+.background-img {
     margin-top: 71px;
     height: 105vh;
 }
@@ -61,16 +70,16 @@ body{
 }
 
 
-.form-sec{
+.form-sec {
     margin-left: 2%;
     color: white;
     height: 95vh;
     border-radius: 2%;
-    background-color: black; 
+    background-color: black;
     opacity: 0.8;
 }
 
-.img-sec{
+.img-sec {
     margin-left: 3%;
     margin-top: 8%;
     color: white;
@@ -80,25 +89,25 @@ body{
     opacity: 0.9; */
 }
 
-#image1{
+#image1 {
     padding-top: 10%;
     /* margin-top: 10%; */
 }
 
-#formBox{
+#formBox {
     /* background-color: #0bc2b3; */
     padding: 5%;
     border-radius: 3%;
     box-shadow: 6px 5px 6px black;
 }
 
-#image{
+#image {
     /* /* background-color: #0bc2b3; */
     margin-top: 10%;
     padding-top: 10%;
 }
 
-.sec-1{
+.sec-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -106,51 +115,51 @@ body{
     background-color: black;
 }
 
-.sec-1 h2{
+.sec-1 h2 {
     font-size: 18px;
     color: lightgray;
     text-transform: uppercase;
 }
 
-.sec-1 ul{
+.sec-1 ul {
     list-style: none;
 
 }
 
 .sec-1 ul li {
-    padding:5px;
+    padding: 5px;
 
 }
 
-.sec-1 ul li a{
+.sec-1 ul li a {
     text-decoration: none;
     color: gray;
 }
 
-.sec-1 ul li a:hover{
+.sec-1 ul li a:hover {
     color: orange;
 }
 
-span{
+span {
     color: grey;
 }
 
-hr{
+hr {
     opacity: .2;
 }
 
-.sec-2{
+.sec-2 {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.sec-2 ul{
+.sec-2 ul {
     list-style: none;
-    margin:20px;
-} 
+    margin: 20px;
+}
 
-.sec-2 ul li{
+.sec-2 ul li {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -161,29 +170,29 @@ hr{
 
 }
 
-.sec-2 ul li i{
+.sec-2 ul li i {
     color: white;
     font-size: 24px;
     line-height: 20px;
     text-align: center;
 }
 
-.sec-2 ul li:nth-child(1):hover{
+.sec-2 ul li:nth-child(1):hover {
     background-color: #3b5999;
 }
 
-.sec-2 ul li:nth-child(2):hover{
+.sec-2 ul li:nth-child(2):hover {
     background-color: #55acee;
 }
 
-.sec-2 ul li:nth-child(3):hover{
+.sec-2 ul li:nth-child(3):hover {
     background-color: #dd4b39;
 }
 
-.sec-2 ul li:nth-child(4):hover{
+.sec-2 ul li:nth-child(4):hover {
     background-color: #0077B5;
 }
 
-.sec-2 ul li:nth-child(5):hover{
+.sec-2 ul li:nth-child(5):hover {
     background-color: #ea4c89;
 }

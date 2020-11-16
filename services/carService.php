@@ -17,6 +17,8 @@
 
     <!-- Font Awsome  -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts cdn  -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 
 
 </head>
@@ -26,7 +28,7 @@
     <!-- Navigation Bar  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navigationBar">
 
-        <a class="navbar-brand" href="#">SANSERV</a>
+        <a class="navbar-brand" href="../index.html">SANSERV</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,12 +53,12 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../contactUs.html">Contact Us</a>
+                    <a class="nav-link" href="../contactUs.php">Contact Us</a>
                 </li>
 
             </ul>
 
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="houseService.php">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">APPOINTMENT</button>
             </form>
         </div>
@@ -68,7 +70,7 @@
 
             <div class="col-lg-2 menu-bar">
                 <div id="navigationBox">
-                    <h4 id="head">Quick Links</h4>
+                    <h4 class="head">Quick Links</h4>
                     <ul>
                         <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
                         <li class="py-4 my-2"><a href="socityService.php">Society Sanitization </a></li>
@@ -90,7 +92,7 @@
                     <div class="col-lg-6 form-sec">
                         <div id="formBox">
                             <div>
-                                <h2 class="text-center">CAR SERVICE FORM</h2>
+                                <h2 class="text-center head">CAR SERVICE FORM</h2>
                             </div>
 
                             <div>
@@ -130,7 +132,7 @@
 
                                     <label> Comments </label>
                                     <br>
-                                    <textarea name="comment" id="" cols="74"></textarea>
+                                    <textarea name="comment" id="" cols="83"></textarea>
 
                                     <br><br>
                                     <button type="submit" name="b1" class="btn btn-secondary">Submit</button>

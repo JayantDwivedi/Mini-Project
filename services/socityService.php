@@ -17,6 +17,8 @@
 
     <!-- Font Awsome  -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts cdn  -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 
 
 </head>
@@ -26,16 +28,15 @@
     <!-- Navigation Bar  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navigationBar">
 
-        <a class="navbar-brand" href="#">SANSERV</a>
+        <a class="navbar-brand" href="../index.html">SANSERV</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
+                <li class="nav-item ">
                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
 
@@ -47,17 +48,15 @@
                     <a class="nav-link" href="../aboutUs.html">About Us</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                </li>
+
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../contactUs.html">Contact Us</a>
-                </li>
+                    <a class="nav-link" href="../contactUs.php">Contact Us</a>
+                    </>
 
             </ul>
 
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="hosueService.php">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">APPOINTMENT</button>
             </form>
         </div>
@@ -69,7 +68,7 @@
 
             <div class="col-lg-2 menu-bar">
                 <div id="navigationBox">
-                    <h4 id="head">Quick Links</h4>
+                    <h4 class="head">Quick Links</h4>
                     <ul>
                         <li class="py-4 my-2"><a href="houseService.php"> House Sanitization </a></li>
                         <li class="py-4 my-2"><a href="socityService.php">Society Sanitization </a></li>
@@ -91,7 +90,7 @@
                     <div class="col-lg-6 form-sec">
                         <div id="formBox">
                             <div>
-                                <h2 class="text-center">SOCIETY SERVICE FORM</h2>
+                                <h2 class="text-center head">SOCIETY SERVICE FORM</h2>
                             </div>
 
                             <div>
@@ -99,38 +98,32 @@
 
                                     <div class="form-group">
                                         <label> Name </label>
-                                        <input type="text" name="user" autocomplete="off" class="form-control"
-                                            placeholder="Enter Name">
+                                        <input type="text" name="user" autocomplete="off" class="form-control" placeholder="Enter Name">
                                     </div>
 
                                     <div class="form-group">
                                         <label> E-mail </label>
-                                        <input type="text" name="email" autocomplete="off" class="form-control"
-                                            placeholder="Enter Email ID">
+                                        <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter Email ID">
                                     </div>
 
                                     <div class="form-group">
                                         <label> Mobile Number </label>
-                                        <input type="text" name="mobile" autocomplete="off" class="form-control"
-                                            placeholder="Enter Mobile Number">
+                                        <input type="text" name="mobile" autocomplete="off" class="form-control" placeholder="Enter Mobile Number">
                                     </div>
 
                                     <div class="form-group">
                                         <label> Address </label>
-                                        <input type="text" name="address" autocomplete="off" class="form-control"
-                                            placeholder="Enter Address">
+                                        <input type="text" name="address" autocomplete="off" class="form-control" placeholder="Enter Address">
                                     </div>
 
                                     <div class="form-group">
                                         <label> Appointment Date </label>
-                                        <input type="date" name="date" autocomplete="off" class="form-control"
-                                            placeholder="Enter Appointment Date">
+                                        <input type="date" name="date" autocomplete="off" class="form-control" placeholder="Enter Appointment Date">
                                     </div>
 
                                     <div class="form-group">
                                         <label> Contact Time </label>
-                                        <input type="time" name="time" autocomplete="off" class="form-control"
-                                            placeholder="Enter Contact Time">
+                                        <input type="time" name="time" autocomplete="off" class="form-control" placeholder="Enter Contact Time">
                                     </div>
 
 
@@ -138,8 +131,7 @@
 
                                     <div class="form-group">
                                         <label>Number of Flats: </label>
-                                        <input type="number" name="flats" autocomplete="off" class="form-control"
-                                            placeholder="Enter Number Of Flates">
+                                        <input type="number" name="flats" autocomplete="off" class="form-control" placeholder="Enter Number Of Flates">
                                     </div>
 
 
@@ -167,7 +159,7 @@
 
                                     <label>Comments </label>
                                     <br>
-                                    <textarea name="comment" id="" cols="74"></textarea>
+                                    <textarea name="comment" id="" cols="83"></textarea>
 
                                     <br><br>
                                     <button type="submit" name="b1" class="btn btn-secondary">Submit</button>
