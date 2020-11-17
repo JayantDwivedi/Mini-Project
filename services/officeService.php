@@ -158,7 +158,7 @@
 
                                     <label>Comments </label>
                                     <br>
-                                    <textarea name="comment" id="" cols="83"></textarea>
+                                    <textarea name="comment" id="" cols="74"></textarea>
 
                                     <br><br>
                                     <button type="submit" name="b1" class="btn btn-secondary">Submit</button>
@@ -179,7 +179,7 @@
 
     <!-- Footer Section  -->
 
-    <footer class="">
+    <footer>
 
         <section class="sec-1">
             <section class="link1">
@@ -187,9 +187,9 @@
 
                 <ul>
                     <li><a href="#">Sanitization</a></li>
-                    <li><a href="#">Pesticides</a></li>
-                    <li><a href="#">Disinfection</a></li>
-
+                    <!-- <li><a href="#">Pesticides</a></li> -->
+                    <li><a href="#">Disinfection</a></li>    
+                
                 </ul>
             </section>
 
@@ -197,11 +197,11 @@
                 <h2>Quick Links</h2>
 
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#"> Contribute </a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="../aboutUs.html">About Us</a></li>
+                    <li><a href="../contactUs.html">Contact Us</a></li>
+                    <!-- <li><a href="#"> Contribute  </a></li> -->
+                    <li><a href="../privacyPolicies.html">Privacy Policy</a></li>
+                    <li><a href="houseService.php">Services</a></li>
                     <!-- <li><a href="#">Disclaimer</a></li> -->
                 </ul>
             </section>
@@ -211,9 +211,11 @@
 
                 <ul>
                     <li><i class="fa fa-home"></i><span> Uttar Pradesh, India</span></li>
-                    <li><i class="fa fa-envelope"></i><span> senserv@gmail.com</span></li>
-                    <li><i class="fa fa-phone-square"></i><span> Mobile : 9999999999</span></li>
-                    <li><i class="fa fa-facebook-official"></i><a href="#"> senserv </a></li>
+                    <li><a href="mailto:jayant.gla_cs18@gla.ac.in"><i class="fa fa-envelope"></i><span>
+                                senserv@gmail.com</span></a></li>
+                    <li><a href="tel:7060561783"><i class="fa fa-phone-square"></i><span> Mobile : 9999999999</span></a>
+                    </li>
+                    <li><a href="www.facebook.com"><i class="fa fa-facebook-official"></i><span> SanServ</span></a></li>
                 </ul>
             </section>
 
@@ -227,7 +229,7 @@
                 </ul>
             </section>
 
-
+            
         </section>
         <p class="p-3 bg-dark text-white text-center"> © SANSERV | 2020 </p>
 
