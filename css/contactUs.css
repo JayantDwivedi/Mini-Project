@@ -25,7 +25,8 @@
     color: black;
     border-radius: 3%;
     box-shadow: 6px 5px 6px black;
-    height: 67.5vh;
+    height: 580px;
+    width: 780px;
 }
 
 #head {

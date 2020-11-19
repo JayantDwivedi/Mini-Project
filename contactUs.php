@@ -119,8 +119,8 @@
                 <ul>
                     <li><a href="#">Sanitization</a></li>
                     <!-- <li><a href="#">Pesticides</a></li> -->
-                    <li><a href="#">Disinfection</a></li>    
-                
+                    <li><a href="#">Disinfection</a></li>
+
                 </ul>
             </section>
 
@@ -160,7 +160,7 @@
                 </ul>
             </section>
 
-            
+
         </section>
         <p class="p-3 bg-dark text-white text-center"> © SANSERV | 2020 </p>
 
