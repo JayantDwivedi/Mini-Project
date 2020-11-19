@@ -129,7 +129,7 @@
 
                                     <label> Comments </label>
                                     <br>
-                                    <textarea name="comment" id="" cols="74"></textarea>
+                                    <textarea name="comment" id="" cols="83"></textarea>
 
                                     <br><br>
                                     <button type="submit" name="b1" class="btn btn-secondary">Submit</button>
