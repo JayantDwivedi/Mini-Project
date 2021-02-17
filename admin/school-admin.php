@@ -104,7 +104,7 @@
 
                     <?php
                     while ($result = mysqli_fetch_assoc($data)) {
-                        header("refresh: 5");
+                        // header("refresh: 5");
                         echo "
                 <tr>
                   <td>" . $result['name'] . "</td>
