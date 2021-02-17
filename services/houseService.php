@@ -98,6 +98,14 @@
                                     <div class="form-group">
                                         <label> Name </label>
                                         <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Enter Name">
+                                        <?php
+                                            if (isset($_POST['b1'])) {
+                                                $name = $_POST['name'];
+                                                if ($name != "Jayant") {
+                                                    echo "<small> Jayant Dalo bhai</small>";
+                                                }
+                                            }
+                                        ?>
                                     </div>
 
                                     <div class="form-group">
@@ -235,7 +243,7 @@ if (isset($_POST['b1'])) {
             echo "Data not Inserted";
         }
     } else {
-        echo "<p style='color:red'> All Fields are required</p>";
+        // echo "<script>alert('Fill all the Feilds')</script>";
     }
 }
 ?>
