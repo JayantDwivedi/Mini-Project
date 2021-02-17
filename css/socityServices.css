@@ -25,7 +25,7 @@ body {
     color: black;
     background-color: #386e6e;
     box-shadow: 6px 5px 6px black;
-    height: 116vh;
+    height: 121.5vh;
 }
 
 .head {
@@ -76,7 +76,7 @@ body {
 .form-sec {
     margin-left: 2%;
     color: white;
-    height: 106vh;
+    height: 111vh;
     border-radius: 2%;
     background-color: black;
     opacity: 0.8;
@@ -110,6 +110,11 @@ body {
     margin-top: 10%;
     padding-top: 10%;
 }
+
+#footer{
+    margin-top: 3%;
+}
+
 
 .sec-1 {
     display: flex;

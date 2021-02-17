@@ -22,7 +22,7 @@ body {
     color: black;
     background-color: #386e6e;
     box-shadow: 6px 5px 6px black;
-    height: 105vh;
+    height: 110.5vh;
 }
 
 .head {
@@ -73,17 +73,18 @@ body {
 .form-sec {
     margin-left: 2%;
     color: white;
-    height: 95vh;
+    height: 99vh;
     border-radius: 2%;
     background-color: black;
     opacity: 0.8;
+    
 }
 
 .img-sec {
     margin-left: 3%;
     margin-top: 8%;
     color: white;
-    height: 93vh;
+    height: 95vh;
     border-radius: 2%;
     /* background-color: black;
     opacity: 0.9; */
@@ -99,12 +100,17 @@ body {
     padding: 5%;
     border-radius: 3%;
     box-shadow: 6px 5px 6px black;
+    /* margin-bottom: 2%; */
 }
 
 #image {
     /* /* background-color: #0bc2b3; */
     margin-top: 10%;
     padding-top: 10%;
+}
+
+#footer{
+    margin-top: 3%;
 }
 
 .sec-1 {

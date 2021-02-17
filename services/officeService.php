@@ -203,7 +203,7 @@
 
     <!-- Footer Section  -->
 
-    <footer>
+    <footer id="footer">
 
         <section class="sec-1">
             <section class="link1">
