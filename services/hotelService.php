@@ -99,16 +99,61 @@
                                     <div class="form-group">
                                         <label> Name </label>
                                         <input type="text" name="user" autocomplete="off" class="form-control" placeholder="Enter Name">
+                                        <?php
+                                            if (isset($_POST['b1'])) {
+                                                $name = $_POST['name'];
+                                                $pattern = "/^[A-Za-z]+$/";
+                                                if ($name == "") {
+                                                    echo "<small>Invalid</small>";
+                                                }
+                                                if ($name != "") {
+                                                    if(!(preg_match($pattern,$name))) {
+                                                       echo "<small>Invalid</small>"; 
+                                                    }
+                                                }
+                                                
+                                            }
+                                        ?>
                                     </div>
 
                                     <div class="form-group">
                                         <label> E-mail </label>
                                         <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter Email ID">
+                                        <?php
+                                            if (isset($_POST['b1'])) {
+                                                $email = $_POST['email'];
+                                                $pattern = "/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/";
+                                                if ($email == "") {
+                                                    echo "<small>Invalid</small>";
+                                                }
+                                                if ($name != "") {
+                                                    if(!(preg_match($pattern,$email))) {
+                                                       echo "<small>Invalid</small>"; 
+                                                    }
+                                                }
+                                                
+                                            }
+                                        ?>
                                     </div>
 
                                     <div class="form-group">
                                         <label> Mobile Number </label>
                                         <input type="text" name="mobile" autocomplete="off" class="form-control" placeholder="Enter Mobile Number">
+                                        <?php
+                                            if (isset($_POST['b1'])) {
+                                                $mobile = $_POST['mobile'];
+                                                $pattern = "/^[6-9]\d{9}$/";
+                                                if ($mobile == "") {
+                                                    echo "<small>Invalid</small>";
+                                                }
+                                                if ($mobile != "") {
+                                                    if(!(preg_match($pattern,$mobile))) {
+                                                       echo "<small>Invalid</small>"; 
+                                                    }
+                                                }
+                                                
+                                            }
+                                        ?>
                                     </div>
 
                                     <div class="form-group">
@@ -258,12 +303,13 @@ if (isset($_POST['b1'])) {
         $query = "insert into hotelservice (name,email,mobile,address,time,date,rooms,comment) values('$name','$email','$mob','$address','$ts','$ds','$rooms,'$comments')";
         $data = mysqli_query($connection, $query) or die(mysqli_error($connection));
         if ($data) {
-            echo "Record Inserted Succesfully";
-        } else {
-            echo "Data not Inserted";
+            echo "<script>alert('We get Your Data')</script>";
+        }
+        else {
+            echo "<script>alert('Fill Form Again')</script>";
         }
     } else {
-        echo "<p style='color:red'> All Fields are required</p>";
+        echo "<script>alert('Fill all the Feilds')</script>";
     }
 }
 ?>
