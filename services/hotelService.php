@@ -219,11 +219,11 @@
                 <h2>Quick Links</h2>
 
                 <ul>
-                    <li><a href="../aboutUs.html">About Us</a></li>
-                    <li><a href="../contactUs.html">Contact Us</a></li>
-                    <!-- <li><a href="#"> Contribute  </a></li> -->
-                    <li><a href="../privacyPolicies.html">Privacy Policy</a></li>
-                    <li><a href="houseService.php">Services</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contactUs.php">Contact Us</a></li>
+                    <!-- <li><a href="#"> Contribute </a></li> -->
+                    <li><a href="privacyPolicies.html">Privacy Policy</a></li>
+                    <li><a href="services/houseService.php">Services</a></li>
                     <!-- <li><a href="#">Disclaimer</a></li> -->
                 </ul>
             </section>
