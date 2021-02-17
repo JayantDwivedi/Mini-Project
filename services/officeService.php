@@ -210,9 +210,9 @@
                 <h2>Categories</h2>
 
                 <ul>
-                    <li><a href="#">Sanitization</a></li>
+                    <li><a href="houseService.php">Sanitization</a></li>
                     <!-- <li><a href="#">Pesticides</a></li> -->
-                    <li><a href="#">Disinfection</a></li>    
+                    <li><a href="houseService.php">Disinfection</a></li>    
                 
                 </ul>
             </section>
@@ -222,7 +222,7 @@
 
                 <ul>
                     <li><a href="../aboutUs.html">About Us</a></li>
-                    <li><a href="contactUs.php">Contact Us</a></li>
+                    <li><a href="../contactUs.php">Contact Us</a></li>
                     <!-- <li><a href="#"> Contribute </a></li> -->
                     <li><a href="../privacyPolicies.html">Privacy Policy</a></li>
                     <li><a href="services/houseService.php">Services</a></li>
