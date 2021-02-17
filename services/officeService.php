@@ -180,27 +180,6 @@
                                         <input type="text" name="area" autocomplete="off" class="form-control" placeholder="Enter Area of Office">
                                     </div>
 
-                                    <!-- <label>House Type : </label>
-                                    <div class="form-check form-check-inline ">
-                                        <input type="checkbox" class="form-check-input px-3" id="exampleCheck1">
-                                        <label class="form-check-label " for="exampleCheck1">1 BHK </label>
-
-                                        <br>
-
-                                        <input type="checkbox" class="form-check-input  pl-3" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck2">2 BHK </label>
-
-                                        <br>
-
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck3">3 BHK </label>
-                                        
-                                        <br>
-
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck4"> Other </label>
-                                    </div> -->
-
                                     <label>Comments </label>
                                     <br>
                                     <textarea name="comment" id="" cols="74"></textarea>
