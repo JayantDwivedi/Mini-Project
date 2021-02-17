@@ -104,11 +104,11 @@
                                                 $name = $_POST['name'];
                                                 $pattern = "/^[A-Za-z]+$/";
                                                 if ($name == "") {
-                                                    echo "<small>Invalid</small>";
+                                                    echo "<small>Enter valid Name</small>"; 
                                                 }
-                                                if ($name != "") {
+                                                else {
                                                     if(!(preg_match($pattern,$name))) {
-                                                       echo "<small>Invalid</small>"; 
+                                                        echo "<small>Enter valid Name</small>"; 
                                                     }
                                                 }
                                                 
@@ -124,11 +124,11 @@
                                                 $email = $_POST['email'];
                                                 $pattern = "/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/";
                                                 if ($email == "") {
-                                                    echo "<small>Invalid</small>";
+                                                    echo "<small>Enter valid Email</small>";
                                                 }
-                                                if ($name != "") {
+                                                else {
                                                     if(!(preg_match($pattern,$email))) {
-                                                       echo "<small>Invalid</small>"; 
+                                                        echo "<small>Enter valid Email</small>";
                                                     }
                                                 }
                                                 
@@ -144,11 +144,11 @@
                                                 $mobile = $_POST['mobile'];
                                                 $pattern = "/^[6-9]\d{9}$/";
                                                 if ($mobile == "") {
-                                                    echo "<small>Invalid</small>";
+                                                    echo "<small>Enter mobile no with 10 digits</small>";
                                                 }
-                                                if ($mobile != "") {
+                                                else {
                                                     if(!(preg_match($pattern,$mobile))) {
-                                                       echo "<small>Invalid</small>"; 
+                                                        echo "<small>Provide proper 10 digits</small>";
                                                     }
                                                 }
                                                 
@@ -221,11 +221,11 @@
                 <h2>Quick Links</h2>
 
                 <ul>
-                    <li><a href="../aboutUs.html">About Us</a></li>
-                    <li><a href="../contactUs.html">Contact Us</a></li>
-                    <!-- <li><a href="#"> Contribute  </a></li> -->
-                    <li><a href="../privacyPolicies.html">Privacy Policy</a></li>
-                    <li><a href="houseService.php">Services</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contactUs.php">Contact Us</a></li>
+                    <!-- <li><a href="#"> Contribute </a></li> -->
+                    <li><a href="privacyPolicies.html">Privacy Policy</a></li>
+                    <li><a href="services/houseService.php">Services</a></li>
                     <!-- <li><a href="#">Disclaimer</a></li> -->
                 </ul>
             </section>
