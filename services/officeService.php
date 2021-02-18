@@ -286,10 +286,10 @@ if (isset($_POST['b1'])) {
             echo "<script>alert('We get Your Data')</script>";
         }
         else {
-            echo "<script>alert('Fill Form Again')</script>";
+            // echo "<script>alert('Fill Form Again')</script>";
         }
     } else {
-        echo "<script>alert('Fill all the Feilds')</script>";
+        // echo "<script>alert('Fill all the Feilds')</script>";
     }
 }
 ?>
